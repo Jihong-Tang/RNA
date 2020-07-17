@@ -446,7 +446,8 @@ $ export PATH="$(pwd):$PATH"
 $ mv ./rRNA_databases/ ~/database/sortmerna_db/rRNA_databases
 
 # 相关库文件
-$ cd ~/database/rRNA_databases
+$ cd ~/database/sortmerna_db/
+$ mkdir -p index/
 $ sortmerna_ref_data=$(pwd)/rRNA_databases/silva-bac-16s-id90.fasta,$(pwd)/index/silva-bac-16s-db:\
 $(pwd)/rRNA_databases/silva-bac-23s-id98.fasta,$(pwd)/index/silva-bac-23s-db:\
 $(pwd)/rRNA_databases/silva-arc-16s-id95.fasta,$(pwd)/index/silva-arc-16s-db:\
@@ -462,7 +463,7 @@ $(pwd)/rRNA_databases/silva-euk-28s-id98.fasta,$(pwd)/index/silva-euk-28s-db:\
 $(pwd)/rRNA_databases/rfam-5s-database-id98.fasta,$(pwd)/index/rfam-5s-db:\
 $(pwd)/rRNA_databases/rfam-5.8s-database-id98.fasta,$(pwd)/index/rfam-5.8s-db
 
-# 建立数据库索引
+# 建立数据库索引, data 可以用sortmerna_ref_data 或者 euk_rRNA_ref_data替代
 $ indexdb_rna --ref $data
 ```
 
