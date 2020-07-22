@@ -757,19 +757,19 @@ $ gzip -d rn6.tar.gz
 
 ```bash
 $ cd ~/project/rat/annotation
-$ wget ftp://ftp.ensembl.org/pub/release-97/gff3/rattus_norvegicus/Rattus_norvegicus.Rnor_6.0.97.gff3.gz
-$ gzip -d Rattus_norvegicus.Rnor_6.0.97.gff3.gz
+$ wget ftp://ftp.ensembl.org/pub/release-100/gtf/rattus_norvegicus/Rattus_norvegicus.Rnor_6.0.100.gtf.gz
+$ gzip -d Rattus_norvegicus.Rnor_6.0.100.gtf.gz
 
 # 同样的也改名
-$ mv Rattus_norvegicus.Rnor_6.0.97.gff3 rn6.gff
+$ mv Rattus_norvegicus.Rnor_6.0.100.gtf rn6.gtf
 
 # 使用head查看部分
-$ head rn6.gff
+$ head rn6.gtf
 ```
 
 > **注释数据说明**
 > 
-> 注释`gff`文件的样例：
+> 注释`gtf`文件的样例：
 > 
 > ```
 > #!genome-build Rnor_6.0
